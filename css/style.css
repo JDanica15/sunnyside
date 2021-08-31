@@ -1,12 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
 
 body {
-    font-size: 18px;
-    font-family: 'Barlow', sans-serif;
+  font-size: 18px;
+  font-family: "Barlow", sans-serif;
+  background: #fff;
 }
 
+/* HEADER */
+header {
+  background: #3ebfff;
+}
 
 /* MOBILE */
-@media only screen and (max-width:375px) {
-    
+@media only screen and (max-width: 375px) {
 }

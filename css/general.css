@@ -1,4 +1,3 @@
-
 /* PRIMARY COLOR */
 .soft-red {
   color: hsl(7, 99%, 70%);
@@ -19,17 +18,55 @@
 /* SECONDARY COLOR */
 
 .v-dark-blue {
-    color: hsl(212, 27%, 19%);
+  color: hsl(212, 27%, 19%);
 }
 .v-dark-g-blue {
-    color: hsl(213, 9%, 39%);
+  color: hsl(213, 9%, 39%);
 }
 .dark-g-blue {
-    color: hsl(232, 10%, 55%);
+  color: hsl(232, 10%, 55%);
 }
 .gray-blue {
-    color: hsl(210, 4%, 67%);
+  color: hsl(210, 4%, 67%);
 }
 .white {
-    color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 100%);
+}
+
+/* BACKGROUND COLOR PRIMARY*/
+.soft-red-bg {
+  background: hsl(7, 99%, 70%);
+}
+.yellow-bg {
+  background: hsl(51, 100%, 49%);
+}
+.dark-cyan-bg {
+  background: hsl(167, 40%, 24%);
+}
+.dark-blue-bg {
+  background: hsl(198, 62%, 26%);
+}
+.dark-m-cyan-bg {
+  background: hsl(168, 34%, 41%);
+}
+
+/* SECONDARY BG COLOR */
+.v-dark-blue-bg {
+  color: hsl(212, 27%, 19%);
+}
+.v-dark-g-blue-bg {
+  color: hsl(213, 9%, 39%);
+}
+.dark-g-blue-bg {
+  color: hsl(232, 10%, 55%);
+}
+.gray-blue-bg {
+  color: hsl(210, 4%, 67%);
+}
+.white-bg {
+  color: hsl(0, 0%, 100%);
+}
+
+.flex {
+  display: flex;
 }
