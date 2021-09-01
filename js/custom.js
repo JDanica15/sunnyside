@@ -6,7 +6,7 @@ window,
   addEventListener("resize", function () {
     if (window.innerWidth <= 767) {
       menuLink.classList.add("collapse");
-    } else if (window.innerWidth >= 768) {
+    } else {
       btnHamburger.classList.remove("open");
       menuLink.classList.remove("collapse");
       menuLink.classList.remove("show");
