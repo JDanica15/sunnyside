@@ -1,16 +1,220 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700;800&display=swap");
 
 body {
   font-size: 18px;
   font-family: "Barlow", sans-serif;
   background: #fff;
 }
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+}
 
 /* HEADER */
 header {
-  background: #3ebfff;
+  background: #3ebfff url(../images/image-header.jpg) no-repeat bottom
+    center/cover;
+  overflow: hidden;
+  background-size: contain;
+}
+header .arrow-down {
+  margin-block: 100px 329px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+header h1 {
+  color: #fff;
+  font-family: "Fraunces", serif;
+  font-size: 55px;
+  letter-spacing: 11px;
+  margin-top: 76px;
+  text-align: center;
+}
+.header {
+  padding: 34px 40px;
 }
 
+.header .hamburger {
+  position: relative;
+  width: 25px;
+  height: 21px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.header .hamburger span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 26px;
+  opacity: 1;
+  left: 0;
+  background: #81e3ff;
+  transition: 0.25s ease-in-out;
+}
+
+.header .hamburger span:nth-child(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+.header .hamburger span:nth-child(2) {
+  top: 7px;
+  opacity: 1;
+  transform-origin: left center;
+}
+.header .hamburger span:nth-child(3) {
+  top: 14px;
+  transform-origin: left center;
+}
+
+.header .open span:nth-child(1) {
+  transform: rotate(45deg);
+  top: -3px;
+}
+.header .open span:nth-child(2) {
+  top: 0;
+  opacity: 0;
+  transition: all 0.5 ease-in-out;
+}
+.header .open span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 15px;
+}
+.header .logo img {
+  width: 185px;
+}
+.header nav ul li {
+  display: inline-block;
+  font-family: "Barlow", sans-serif;
+}
+.header .menu ul li a {
+  font-size: 19px;
+}
+.header .menu ul li:nth-child(1),
+.header .menu ul li:nth-child(2),
+.header .menu ul li:nth-child(3) {
+  padding-right: 48px;
+}
+.header .menu ul li.contact {
+  background: #fff;
+  padding: 20px 33px;
+  border-radius: 44px;
+}
+.header .menu ul li.contact a {
+  color: #000;
+  font-size: 18px;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* FIRST CONTAINER */
+
 /* MOBILE */
-@media only screen and (max-width: 375px) {
+
+@media only screen and (max-width: 767px) {
+  header {
+    background: #3ebfff url(../images/mobile/image-header.jpg) no-repeat bottom
+      center/cover;
+    border-bottom: 1px solid transparent;
+    background-size: 100%;
+  }
+  .header {
+    padding: 35px 23px;
+  }
+  .header nav ul {
+    background: #fff;
+    padding: 46px 0;
+  }
+  .header .show nav ul::after {
+    content: "";
+    position: absolute;
+    top: -23px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 24px solid white;
+    border-left: 24px solid transparent;
+  }
+  header .arrow-down {
+    margin-block: 55px 130px;
+  }
+  header h1 {
+    font-size: 36px;
+    letter-spacing: 8px;
+  }
+  .hide-on-pc {
+    display: block;
+  }
+  .header {
+    position: relative;
+  }
+  .collapse:not(.show) {
+    display: none;
+  }
+  .header .menu ul li:nth-child(1),
+  .header .menu ul li:nth-child(2),
+  .header .menu ul li:nth-child(3) {
+    padding-right: 0;
+    padding-bottom: 42px;
+  }
+  .header .menu ul li.contact {
+    background: 0;
+    padding: 0;
+  }
+  .header .menu ul li.contact a {
+    background: #fbd601;
+    padding: 23px 31px;
+    border-radius: 44px;
+    width: 139px;
+    margin: 0 auto;
+  }
+  .menu {
+    display: block;
+  }
+  .header .show {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 102px;
+    text-align: center;
+    width: calc(100% - 3rem);
+    margin: 0 auto;
+  }
+  .header .show nav ul li {
+    display: block;
+  }
+  .header .show li a {
+    color: #7d7987;
+    display: block;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 769px) {
+  .hide-on-pc {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .header .logo img {
+    width: 171px;
+  }
 }
