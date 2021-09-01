@@ -13,7 +13,6 @@ window,
     }
   });
 
-
 btnHamburger.addEventListener("click", function () {
   console.log("click");
 
