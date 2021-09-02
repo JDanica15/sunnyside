@@ -109,9 +109,9 @@ h4 {
 
 @media (max-width: 767px) {
   .flex-r-column {
-    flex-direction: column-reverse;
+	flex-direction: column-reverse;
   }
   .flex-column {
-    flex-direction: column;
+	flex-direction: column;
   }
 }
