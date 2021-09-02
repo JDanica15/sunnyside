@@ -91,11 +91,17 @@ h4 {
 .align-center {
   align-items: center;
 }
+.align-content {
+  align-content: center;
+}
 .flex-row {
   flex-direction: row;
 }
 .flex-wrap {
   flex-wrap: wrap;
+}
+.flex-nr-column {
+  flex-direction: column;
 }
 
 @media (max-width: 767px) {

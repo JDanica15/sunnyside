@@ -124,7 +124,7 @@ header h1 {
   align-items: center;
 }
 
-/* FIRST CONTAINER */
+/* ARTICLE CONTAINER */
 .container .col-left {
   width: 50%;
 }
@@ -184,6 +184,37 @@ header h1 {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.card {
+  flex: 0.5;
+  justify-content: flex-end;
+  min-height: 600px;
+  padding: 22px;
+}
+.card h3 {
+  font-size: 28px;
+  margin: 10px;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  text-align: center;
+}
+.card p {
+  font-size: 15.7px;
+  font-family: "Barlow", sans-serif;
+  text-align: center;
+  line-height: 1.8;
+  padding: 0;
+  max-width: 330px;
+  align-self: center;
+  padding: 20px 0 35px;
+}
+.card.cherry {
+  background: url(../images/image-graphic-design.jpg) center no-repeat;
+  background-size: cover;
+}
+.card.orange {
+  background: url(../images/image-photography.jpg) no-repeat center;
+  background-size: cover;
 }
 
 /* MOBILE */
@@ -267,7 +298,7 @@ header h1 {
   .hide-on-mobile {
     display: none;
   }
-  /* FIRST CONTAINER */
+  /* ARTICLE CONTAINER */
   .container .col-left {
     width: 100%;
     padding-left: 0;
@@ -286,10 +317,18 @@ header h1 {
   .container .col-right img {
     height: 100%;
   }
+  .card.cherry {
+    background: url(../images/mobile/image-graphic-design.jpg) center no-repeat;
+    background-size: cover;
+  }
+  .card.orange {
+    background: url(../images/mobile/image-photography.jpg) no-repeat center;
+    background-size: cover;
+  }
 }
 
 /* DESKTOP */
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .hide-on-pc {
     display: none;
   }
