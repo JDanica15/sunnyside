@@ -103,6 +103,9 @@ h4 {
 .flex-nr-column {
   flex-direction: column;
 }
+.flex-row {
+  flex-direction: row;
+}
 
 @media (max-width: 767px) {
   .flex-r-column {
