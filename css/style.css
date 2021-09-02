@@ -100,7 +100,6 @@ header .arrow-down {
 }
 header h1 {
   color: #fff;
-  font-family: "Fraunces", serif;
   font-size: 55px;
   letter-spacing: 11px;
   margin-top: 78px;
@@ -160,7 +159,6 @@ header h1 {
 }
 .header nav ul li {
   display: inline-block;
-  font-family: "Barlow", sans-serif;
 }
 .header .menu ul li:nth-child(1),
 .header .menu ul li:nth-child(2),
@@ -171,6 +169,9 @@ header h1 {
   background: #fff;
   padding: 19px 28px;
   border-radius: 44px;
+}
+.header .menu ul li a {
+  font-family: "Barlow", sans-serif;
 }
 .header .menu ul li.contact a {
   color: #000;
@@ -252,13 +253,11 @@ header h1 {
 .card h3 {
   font-size: 28px;
   margin: 10px;
-  font-family: "Fraunces", serif;
   font-weight: 900;
   text-align: center;
 }
 .card p {
   font-size: 15.7px;
-  font-family: "Barlow", sans-serif;
   text-align: center;
   line-height: 1.8;
   padding: 0;
@@ -304,7 +303,6 @@ header h1 {
   margin: 30px auto;
 }
 .testimonials .testimonial-item .wrapper .info {
-  font-family: "Barlow", sans-serif;
   font-size: 18px;
   text-align: center;
   line-height: 1.8;
