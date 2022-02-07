@@ -2,8 +2,7 @@ const btnHamburger = document.querySelector(".hamburger");
 const menuLink = document.querySelector(".menu");
 
 // Window screen
-window,
-  addEventListener("resize", function () {
+window.addEventListener("resize", function () {
 	if (window.innerWidth <= 767) {
 	  menuLink.classList.add("collapse");
 	} else {
